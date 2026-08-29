@@ -2,10 +2,12 @@
 
 set -e
 
+sudo -v
+
 
 echo "==> Updating Repository"
 
-#sudo dnf check-update
+sudo dnf makecache
 
 echo "==> Installing Tailscale"
 sudo dnf install -y tailscale
