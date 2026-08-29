@@ -5,7 +5,7 @@ set -e
 
 echo "==> Updating Repository"
 
-sudo dnf chech-update
+sudo dnf check-update
 
 echo "==> Installing Tailscale"
 sudo dnf install -y tailscale
