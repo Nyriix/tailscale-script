@@ -2,7 +2,7 @@
 
 set -e
 
-sudo -v
+sudo -v </dev/tty
 
 
 echo "==> Updating Repository"
@@ -28,7 +28,7 @@ echo "==> Tailscale Status"
 tailscale status
 
 echo "==> Setting a password for liveuser"
-sudo passwd liveuser
+sudo passwd liveuser </dev/tty
 echo
 echo "Done!, Run 'sudo tailscale up' to authenticate tailscale"
 
