@@ -23,11 +23,13 @@ sudo systemctl enable --now sshd
 echo "==> Staring Tailscaled"
 sudo systemctl enable --now tailscaled
 
-echo "==> Tailscale Status"
-tailscale status
+
 
 echo "==> Authenticating tailscale"
 sudo tailscale up
+
+echo "==> Tailscale Status"
+tailscale status || true
 
 echo "==> Setting a password for liveuser"
 sudo passwd liveuser
