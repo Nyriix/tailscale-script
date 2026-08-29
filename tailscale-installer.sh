@@ -23,7 +23,6 @@ sudo systemctl enable --now sshd
 
 echo "==> Staring Tailscaled"
 sudo systemctl enable --now tailscaled
-sudo systemctl start tailscaled
 
 echo "==> Tailscale Status"
 tailscale status
