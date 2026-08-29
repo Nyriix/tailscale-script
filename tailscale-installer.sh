@@ -35,7 +35,9 @@ echo "==> Setting a password for liveuser"
 sudo passwd liveuser
 
 
-echo "Done!, Run 'sudo tailscale up' to authenticate tailscale"
+echo "==> Starting a remote terminal session"
+tmux new -s remote
+
 
 
 
